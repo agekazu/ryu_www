@@ -1,0 +1,8 @@
+
+.icon-pencil:before { content: '\49'; } /* 'I' */
+.icon-cab:before { content: '\63'; } /* 'c' */
+.icon-th-list:before { content: '\69'; } /* 'i' */
+.icon-left-open:before { content: '\6c'; } /* 'l' */
+.icon-cloud:before { content: '\6d'; } /* 'm' */
+.icon-right-open:before { content: '\72'; } /* 'r' */
+.icon-search:before { content: '\73'; } /* 's' */
