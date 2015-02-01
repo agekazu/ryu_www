@@ -1,14 +1,36 @@
-<header class="header">
-
 <div class="wrapper">
+<div class="header">
+  <div class="logo-area header-col header-col-1">
+    <img src="./img/logo.svg" onerror="this.src='./img/logo.png'" alt="琉大Logo" />
+  </div>
 
-  
+  <div class="header-col header-col-2 site-links-area">
+    <div class="header-col">
+    <ul>
+      <li><p class="icon--text"><span class="icon-cab"><span><a class="link-text" href="">交通アクセス</a></span></p></li>
+      <li><p class="icon--text"><span class="icon-pencil"></span><a class="link-text" href="">お問い合わせ</a></p></li>
+      <li><p class="icon--text"><span class="icon-cloud"></span><a class="link-text" href="">サイトマップ</a></p></li>
+    </ul>
+    </div>
 
-  <p class="icon--text"><span class="icon-cab"><span><a class="link-text" href="">交通アクセス</a></span></p>
-  <p class="icon--text"><span class="icon-pencil"></span><a class="link-text" href="">お問い合わせ</a></p>
-  <p class="icon--text"><span class="icon-cloud"></span><a class="link-text" href="">サイトマップ</a></p>
+    <div class="header-col">
+    <ul>
+      <li>日本語</li>
+      <li>English</li>
+      <li>中文</li>
+      <li>한국어</li>
+    </ul>
+    </div>
 
-  <!--<i class="icon-left-open"></i>-->
+    <form class="search" action="http://google.com/cse">
+      <input type="hidden" name="cx" value="018320070600186071267:kt761j6j7ku">
+      <input type="hidden" name="hl" value="ja">
+      <input type="hidden" name="ie" value="UTF-8">
+      <input type="hidden" name="oe" value="UTF-8">
+      <input type="text" name="q" size="20" maxlength="256">
+      <input type="submit" name="sa" value="検索">
+    </form>
+  </div>
 
   <nav class="site-nav">
     <div class="trigger">
@@ -19,7 +41,5 @@
       {% endfor %}
     </div>
   </nav>
-
 </div>
-
-</header>
+</div>
