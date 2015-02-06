@@ -8,11 +8,9 @@
       max-width:100%;
       height:auto;
     }
-    background: blue;
   }
 
   .site-links-area {
-    background: lightgreen;
     ul > li {
       @include media-query($on-laptop) {
         float: left;
@@ -35,9 +33,9 @@
           margin-left: 0;
         }
       }
-      background: -moz-linear-gradient($blue-color, $dark-blue-color);
-      background: -webkit-linear-gradient($blue-color, $dark-blue-color);
-      background: linear-gradient($blue-color, $dark-blue-color);
+      background: -moz-linear-gradient($blue-color, $blue-color-dark);
+      background: -webkit-linear-gradient($blue-color, $blue-color-dark);
+      background: linear-gradient($blue-color, $blue-color-dark);
       border-left: none;
       border-radius: 0 0 10px 10px;
       border: solid 1px white;
@@ -56,7 +54,7 @@
         text-align: center;
         width: 68px;
         &:hover {
-          background-color: $dark-blue-color;
+          background-color: $blue-color-dark;
           text-decoration: none;
           border-radius: 0 0 10px 10px;
           -webkit-border-radius: 0 0 10px 10px;
@@ -75,7 +73,7 @@
       }
 
       .text-box {
-        border:solid 1px $dark-blue-color;
+        border:solid 1px $blue-color-dark;
         font-size: $small-font-size;
         margin-top: 5px;
         padding: 5px;
@@ -83,17 +81,17 @@
       }
       .search-button {
         background-color: $blue-color;
-        background: -moz-linear-gradient($blue-color, $dark-blue-color);
-        background: -webkit-linear-gradient($blue-color, $dark-blue-color);
-        background: linear-gradient($blue-color, $dark-blue-color);
-        border: solid 1px $dark-blue-color;
+        background: -moz-linear-gradient($blue-color, $blue-color-dark);
+        background: -webkit-linear-gradient($blue-color, $blue-color-dark);
+        background: linear-gradient($blue-color, $blue-color-dark);
+        border: solid 1px $blue-color-dark;
         color: white;
         font-size: $small-font-size;
         margin-top: 5px;
         padding: 2.5px;
         position: absolute;
         &:hover {
-          background: $dark-blue-color;
+          background: $blue-color-dark;
         }
       }
     }
@@ -143,60 +141,67 @@
 /**
  * Site footer
  */
-.site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+.begin-site-footer {
+  border-bottom: 2px solid $blue-color;
 }
 
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: $spacing-unit / 2;
+.end-site-footer {
+  border-bottom: 4px solid $blue-color;
 }
 
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
+.footer-links > ul > li {
+  display: block;
+  float: left;
+  font-size: $very-small-font-size;
+  border-right: 1.9px solid;
+  padding: 0 $spacing-unit / 5;
+  margin-bottom: $spacing-unit / 4;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
 }
 
-.footer-col-wrapper {
-  font-size: 15px;
+.univ-info {
+  margin-top: $spacing-unit;
+  font-size: $very-small-font-size;
+  .univ-name {
+    font-weight: bold;
+  }
+}
+
+.copy-right {
   color: $grey-color;
-  margin-left: -$spacing-unit / 2;
-  @extend %clearfix;
+  font-size: $very-small-font-size;
 }
 
 .footer-col {
-  float: left;
   margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  clear: left;
 }
 
 .footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+  width:         calc(40% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(61% - (#{$spacing-unit} / 2));
+  width:         calc(61% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
+  .footer-col-1 {
+    width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+    width:         calc(60% - (#{$spacing-unit} / 2));
   }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+  .footer-col-2 {
+    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+    width:         calc(40% - (#{$spacing-unit} / 2));
   }
 }
 
