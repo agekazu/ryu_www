@@ -1,27 +1,51 @@
-<header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-
+<div class="wrapper">
+<div class="header">
+  <div class="logo-area header-col header-col-1">
+    <img src="./img/logo.svg" onerror="this.src='./img/logo.png'" alt="琉大Logo" />
   </div>
 
-</header>
+  <div class="float--right header-col header-col-2 site-links-area">
+    <div class="float--right">
+      <div class="header-col">
+        <ul>
+          <li><p class="icon-text"><span class="icon-cab"><span><a class="link-text" href="">交通アクセス</a></span></p></li>
+          <li><p class="icon-text"><span class="icon-pencil"></span><a class="link-text" href="">お問い合わせ</a></p></li>
+          <li><p class="icon-text"><span class="icon-cloud"></span><a class="link-text" href="">サイトマップ</a></p></li>
+        </ul>
+      </div>
+
+      <div class="header-col">
+        <div class="lang-list-area">
+          <ul>
+            <li><a href="">日本語</a></li>
+            <li><a href="http://www.u-ryukyu.ac.jp/en/index.html">English</a></li>
+            <li><a href="http://www.u-ryukyu.ac.jp/cn/index.php">中文</a></li>
+            <li><a href="http://www.u-ryukyu.ac.jp/kr/index.php">한국어</a></li>
+          </ul>
+
+          <div class="search-box-area">
+            <form class="search-box" action="http://google.com/cse">
+              <input class="text-box" type="hidden" name="cx" value="018320070600186071267:kt761j6j7ku">
+              <input class="text-box" type="hidden" name="hl" value="ja">
+              <input class="text-box" type="hidden" name="ie" value="UTF-8">
+              <input class="text-box" type="hidden" name="oe" value="UTF-8">
+              <input class="text-box" type="text" name="q" size="20" maxlength="256">
+              <button class="search-button" type="submit" name="sa" value="検索"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="trigger">
+      {% for page in site.pages %}
+      {% if page.title %}
+      <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </nav>
+</div>
+</div>
