@@ -8,12 +8,11 @@
 .top-page__list {
   li {
     border-bottom: dotted 1px $grey-color-light;
-    &:last-child {
-      margin-bottom: $spacing-unit;
-    }
-
     a {
       padding-left: $spacing-unit / 2;
+    }
+    &:last-child {
+      margin-bottom: $spacing-unit;
     }
   }
 }
