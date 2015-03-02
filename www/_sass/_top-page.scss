@@ -1,0 +1,19 @@
+.top-page__title {
+  border-left: solid 5px $blue-color;
+  border-bottom: solid 2px $grey-color-light;
+  padding-left: 5px;
+  margin-bottom: $spacing-unit / 2;
+}
+
+.top-page__list {
+  li {
+    border-bottom: dotted 1px $grey-color-light;
+    &:last-child {
+      margin-bottom: $spacing-unit;
+    }
+
+    a {
+      padding-left: $spacing-unit / 2;
+    }
+  }
+}
