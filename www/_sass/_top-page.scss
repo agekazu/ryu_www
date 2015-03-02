@@ -10,6 +10,12 @@
     border-bottom: dotted 1px $grey-color-light;
     a {
       padding-left: $spacing-unit / 2;
+      &:hover {
+        filter: alpha(opacity=50);
+        -moz-opacity: 0.5;
+        opacity: 0.5;
+        text-decoration: none;
+      }
     }
     &:last-child {
       margin-bottom: $spacing-unit;
