@@ -103,10 +103,6 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.float--right {
-  float: right;
-}
-
 .header-col-1 {
   width: -webkit-calc(35% - (#{$spacing-unit} / 2));
   width:         calc(35% - (#{$spacing-unit} / 2));
