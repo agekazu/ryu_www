@@ -2,8 +2,68 @@
 layout: default
 ---
 
+<div id="thumb-v" class="slider-pro">
+  <div class="sp-slides">
+    <div class="sp-slide">
+      <img class="sp-image" src="http://placehold.jp/ff9999/666/680x300.png"/>
+      <p class="sp-layer sp-black sp-padding" data-position="bottomLeft" data-width="100%">
+      キャプション
+      </p>
+    </div>
+    <div class="sp-slide">
+      <img class="sp-image" src="http://placehold.jp/99ff99/666/680x300.png"/>
+      <p class="sp-layer sp-black sp-padding" data-position="bottomLeft" data-width="100%">
+      キャプション
+      </p>
+    </div>
+    <div class="sp-slide">
+      <img class="sp-image" src="http://placehold.jp/9999ff/666/680x300.png"/>
+      <p class="sp-layer sp-black sp-padding" data-position="bottomLeft" data-width="100%">
+      キャプション
+      </p>
+    </div>
+    <div class="sp-slide">
+      <img class="sp-image" src="http://placehold.jp/ffff99/666/680x300.png"/>
+      <p class="sp-layer sp-black sp-padding" data-position="bottomLeft" data-width="100%">
+      キャプション
+      </p>
+    </div>
+  </div><!--/ sp-slides-->
+  <div class="sp-thumbnails">
+    <img class="sp-thumbnail" src="http://placehold.jp/24/ff9999/666/200x80.png"/>
+    <img class="sp-thumbnail" src="http://placehold.jp/24/99ff99/666/200x80.png"/>
+    <img class="sp-thumbnail" src="http://placehold.jp/24/9999ff/666/200x80.png"/>
+    <img class="sp-thumbnail" src="http://placehold.jp/24/ffff99/666/200x80.png"/>
+  </div>
+</div><!--/ thumb-h-->
 
-
+<script>
+$( document ).ready(function( $ ) {
+  $('#thumb-v').sliderPro({
+    width: 683,//横幅
+    arrows: true,//左右の矢印
+    autoplay: false,
+    buttons: false,//ナビゲーションボタン
+    loop: true,//ループ
+    thumbnailsPosition: 'left',//サムネイルの位置
+    thumbnailPointer: true,//アクティブなサムネイルにマークを付ける
+    thumbnailWidth: 200,//サムネイルの横幅
+    thumbnailHeight: 80,//サムネイルの縦幅
+    breakpoints: {
+      600: {//表示方法を変えるサイズ
+        thumbnailsPosition: 'bottom',
+        thumbnailWidth: 200,
+        thumbnailHeight: 80
+      },
+      480: {//表示方法を変えるサイズ
+        thumbnailsPosition: 'bottom',
+        thumbnailWidth: 110,
+        thumbnailHeight: 60
+      }
+    }
+  });
+});
+</script>
 <div class="home">
 
   <div class="top-page__col top-page__col--1 top-page__banner--left">
