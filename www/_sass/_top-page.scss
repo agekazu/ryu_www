@@ -1,8 +1,62 @@
+#to-everyone-nav {
+  margin-bottom: 30px;
+  a {
+    background: -moz-linear-gradient($blue-color-light, $blue-color);
+    background: -webkit-linear-gradient($blue-color-light, $blue-color);
+    background: linear-gradient($blue-color-light, $blue-color);
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: $small-font-size;
+    line-height: 40px;
+    margin: 0 1px 0 0;
+    padding: 0 13px;
+    text-align: center;
+    text-decoration: none;
+    width: 173px;
+
+    &:hover {
+      background: $blue-color;
+    }
+  }
+}
+
+
+#info-nav {
+  margin-bottom: 30px;
+  a {
+    background: -moz-linear-gradient($grey-color-light, $grey-color);
+    background: -webkit-linear-gradient($grey-color-light, $grey-color);
+    background: linear-gradient($grey-color-light, $grey-color);
+    color: #000;
+    display: block;
+    float: left;
+    font-size: $small-font-size;
+    line-height: 40px;
+    margin: 0 1px 0 0;
+    padding: 0 13px;
+    text-align: center;
+    text-decoration: none;
+    width: 95.5px;
+
+    &:hover {
+      background: $grey-color;
+    }
+  }
+}
+
+.open > .naver-wrapper > .naver-container > li > a {
+  width: 100% !important;
+}
+
 .top-page__banner {
   margin-left: $spacing-unit / 2;
   img {
     max-width:100%;
     height:auto;
+  }
+  @include media-query($on-laptop) {
+    text-align: center;
   }
 }
 
